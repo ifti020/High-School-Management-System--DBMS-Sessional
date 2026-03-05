@@ -1,0 +1,215 @@
+/* ======== common ========= */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px 150px 0px 150px;
+}
+
+.box_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.box_btn:hover {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: black;
+    transition: 1s;
+
+}
+
+.container_column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.section_title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container_title {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+
+/* ------- Group ------- */
+.Group {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Group .container_column {
+    background: #e7e7e7;
+}
+
+.Group .container_column:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Branch ---------- */
+.Branch {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.Branch .row .container_column {
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.Branch .row .container_column img{
+    width: 100%;
+    background: transparent;
+    display: block;
+}
+
+.Branch .row .container_column .container_title{
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: transparent;
+    line-height: 2000%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.Branch .row .container_column .container_title:hover{
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 1000%;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+}
+.Branch .row .container_column{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* ---------- facilities ---------- */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities .container_column{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.facilities .container_title{
+    text-align: left;
+    padding: 0;
+}
+.facilities .container_description{
+    padding: 0;
+    text-align: left;
+    font-size: 13px;
+    color: #777;
+}
+
+ /* --------- testimonials ---------- */
+ .testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.testimonials img{
+    height: 120px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials .container_column{
+    margin-right: 10px;
+    flex-basis: 44%;
+    padding: 20px 12px;
+    text-align: left;
+    background: #e3eeff;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials .container_column p{
+    padding: 0;
+}
+.testimonials .container_column h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+
+
+
+
+/* === mobile view === */
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        margin: 10px 0 40px;
+        padding: 0px 40px 0px 40px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .campus .row .container_column .container_title{
+        font-size: 45px;
+        line-height: 1500%;
+    }
+}
