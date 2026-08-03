@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSMS Student Homepage</title>
+    <style>
+        body 
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px ;
+        }
+        .secondNav {
+            /* max-width: 800px;
+            margin: 20px auto;
+            text-align: end;
+            padding: 20px;
+            background-color: orangered;
+            box-shadow: 0 0 10px rgba(red, green, blue, alpha); */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            background-color: orangered;
+            padding: 0 20px;
+            
+        }
+        ul{
+            
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+        }
+       
+        h1{
+            color: aliceblue;
+        }
+        .student-information
+        {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .student-information img{
+            max-width: 150px;
+            border-radius: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1> Welcome, Ifti Haque! </h1>
+    </header>
+    <div class = "secondNav">
+        <nav>
+            <ul>  
+                <li><a href="StudentViewProfile.html">My Profile</a></li>
+                <li><a href="#">My Results</a></li>
+                <li><a href="#">My Routine</a></li>
+                <li><a href="#">Tution Fees</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class = " student-information">
+        <img src = "student_img.jpg" alt="Student-Picture">
+        <h2> Ifti Haque</h2>
+        <p>Class: 8</p>
+        <p>Student ID: 210201020</p>
+        <p>Blood Group: A+</p>
+        <!-- <p>Address</p> -->
+        </div>
+</body>
+</html>
